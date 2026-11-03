@@ -1,0 +1,89 @@
+https://css-tricks.com/complete-guide-css-grid-layout/
+
+comprehensive guide to CSS Grid layout, focusing on all the settings both for the grid parent container and the grid child elements with examples and tutorials.
+
+game teaching about css grid properties
+
+
+https://cssgridgarden.com/#pl
+https://codingfantasy.com/games/css-grid-attack
+https://gridcritters.com/
+
+
+What is the main difference between Flexbox and Grid in terms of dimensionality?
+
+Flexbox is one-dimensional and can work with either a row or a column, while Grid is two-dimensional and works with both rows and columns at the same time.
+
+
+What types of layouts is CSS Grid particularly well-suited for?
+
+Grid is particularly well-suited for layouts that span across both rows and columns (two-dimensional layouts), situations where you need sibling elements to overlap or cover each other without using absolute positioning, and for creating structured layouts with series of boxes. It should be your default layout method for complex page layouts.
+
+
+
+What is the HTML relationship that Grid and Flexbox leverage for their layout properties?
+
+Grid and Flexbox leverage the parent-child relationship in HTML. The properties available for working with layouts depend on whether you're working with a parent or a child element. Grandchildren and great-grandchildren do not receive these properties.
+
+
+What is the most important step to ensure a successful CSS Grid or Flexbox layout?
+
+Making sure your HTML structure is correct before you start applying Grid or Flexbox properties.
+
+
+How does CSS Grid handle situations where the parent's column specification conflicts with what the children suggest?
+
+Grid will try to guess what you want and make the layout work. For example, if you specify three columns but your children suggest there should be four columns, Grid will attempt to accommodate this and try to place the next box in the right location.
+
+
+in HTML <figure> is designed t associate a photo with text that goes with it
+
+
+What is the CSS property and value required to initialize a CSS Grid layout?
+
+display: grid
+
+
+What does the CSS property grid-template-columns define and how is it used?
+
+grid-template-columns sets up a pattern for the number of columns that will go across the page. For example, grid-template-columns: 1fr 1fr 1fr 1fr; creates four evenly-sized columns.
+
+
+What does 'fr' stand for in CSS Grid and why is it useful?
+
+'fr' stands for 'fraction'. It's useful because you don't have to do math manually - you can tell Grid to break the page into fractions (like 1fr 1fr 1fr 1fr for four equal parts) and it will calculate the sizing automatically.
+
+
+What is the purpose of the gap property in CSS Grid?
+
+The gap property adds spacing between grid items. It can take one value to apply to both rows and columns, or two values where the first is the row gap and the second is the column gap (e.g., gap: 1rem 2rem sets 1rem for rows and 2rem for columns).
+
+
+What is a 'rem' unit in CSS and why would you use it instead of pixels?
+
+A 'rem' is a root relative M - typically based on 16 pixels by default. It's relative to the root font size of the document. Using rems allows everything to scale proportionally when the font size changes, rather than being fixed like pixels.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
