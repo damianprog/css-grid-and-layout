@@ -1,0 +1,38 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  width: 980px;
+  margin: 0 auto;
+}
+.one {
+  grid-column: 1 / span 2;
+
+  /*
+    alternative way
+    grid-column: span 3; 
+`*/
+}
+.two {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+}
+.three {
+  grid-column: 1 / span 2;
+}
+.four {
+  grid-column: 2;
+  grid-row: 2;
+}
+.five {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+/* extremely basic formatting */
+body {
+  background-color: black;
+}
+img {
+  max-width: 100%;
+}

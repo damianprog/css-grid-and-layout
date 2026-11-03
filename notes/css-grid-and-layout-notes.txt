@@ -64,9 +64,10 @@ What is a 'rem' unit in CSS and why would you use it instead of pixels?
 A 'rem' is a root relative M - typically based on 16 pixels by default. It's relative to the root font size of the document. Using rems allows everything to scale proportionally when the font size changes, rather than being fixed like pixels.
 
 
+2. 
+grid-column: span 2; mówi tam gdzie jesteś miej szerokość na dwie kolumny
 
-
-
+3. 
 
 
 
