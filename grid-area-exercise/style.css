@@ -1,0 +1,43 @@
+.grid-container {
+  display: grid;
+  /* grid-template-columns: 2fr 1fr; */
+  grid-template-areas:
+    "header header header"
+    "planet planet rocks"
+    "planet planet sand"
+    "footer footer footer";
+  gap: 1rem;
+  width: 980px;
+  margin: 0 auto;
+}
+.one {
+  /* grid-column: 1/3; */
+  grid-area: header;
+}
+.two {
+  /* grid-column: 1/2;
+  grid-row: 2/4; */
+  grid-area: planet;
+}
+.three {
+  /* grid-column: 1/3; */
+  grid-area: footer;
+}
+.four {
+  /* grid-column: 2/3;
+  grid-row: 2/3; */
+  grid-area: rocks;
+}
+.five {
+  /* grid-column: 2/3;
+  grid-row: 3/4; */
+  grid-area: sand;
+}
+
+/* extremely basic formatting */
+body {
+  background-color: black;
+}
+img {
+  max-width: 100%;
+}

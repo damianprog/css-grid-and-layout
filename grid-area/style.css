@@ -1,0 +1,36 @@
+.grid-container {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto; */
+  grid-template-areas:
+    "feature a"
+    "feature b"
+    "feature c";
+  gap: 2rem;
+}
+figure {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+figure:nth-child(3) {
+  /* grid-column: 1/2;
+  grid-row: 1/5; */
+  grid-area: feature;
+  display: block;
+}
+
+/* extremely basic formatting */
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
