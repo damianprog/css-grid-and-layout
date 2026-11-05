@@ -70,9 +70,10 @@ grid-column: span 2; mówi tam gdzie jesteś miej szerokość na dwie kolumny
 3. 
 
 
+a rozumiem to jest tak że kazałem feature zajmować kolumny od 1/3
+a wewnątrz grid containera którym jest również .feature określiłem że ma on posiadać jedną kolumne a w .feature img kazałem aby ten img wewnątrz .feature zajmował całą tą jedną kolumne 
 
-
-
+trzeba powiedzieć aby p tag który nie jest przyciskiem zajmował row od 3/4 
 
 
 
