@@ -76,7 +76,10 @@ a wewnątrz grid containera którym jest również .feature określiłem że ma 
 trzeba powiedzieć aby p tag który nie jest przyciskiem zajmował row od 3/4 
 
 
-
+tekst ma stać na dole komórki,
+height zamień na min-height,
+usuń width: 100vw,
+ustaw kolor linka w .hero-text.
 
 
 
