@@ -1,0 +1,42 @@
+img {
+  max-width: 100%;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 1vw;
+}
+
+section div:first-child {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+section div:nth-child(2) {
+  grid-column: 3/5;
+  grid-row: 1/3;
+}
+
+section div:nth-child(3) {
+  grid-column: 1/3;
+  grid-row: 3/5;
+}
+
+section div:nth-child(4) {
+  grid-column: 3/5;
+  grid-row: 3/5;
+}
+
+section div:last-child {
+  grid-column: 2/4;
+  grid-row: 2/4;
+  border: 1vw solid white;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+
+section div:last-child img {
+  transform: rotate(-45deg) scale(1.42);
+}
