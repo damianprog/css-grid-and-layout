@@ -1,0 +1,67 @@
+/* sets us up with a 2x2 layout of images */
+@media (min-width: 600px) {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+  }
+
+  figcaption {
+    background-color: #001219;
+    color: #fff;
+    padding: 1rem;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    opacity: 0.7;
+  }
+
+  figure {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 40%;
+  }
+
+  img {
+    grid-row: 1/3;
+    grid-column: 1/2;
+  }
+
+  figcaption > * {
+    margin: 0.5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  figure {
+    grid-template-rows: 70% 30%;
+  }
+}
+
+/* default styling, no changes needed here, even with responsive design */
+
+/* set the layout to border box model */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* set font family and background gradient */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* hack to make images flexible */
+img {
+  max-width: 100%;
+}
+/* turn off default padding/margin */
+figure {
+  padding: 0;
+  margin: 0;
+}
