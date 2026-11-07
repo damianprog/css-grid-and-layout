@@ -82,7 +82,112 @@ usuń width: 100vw,
 ustaw kolor linka w .hero-text.
 
 
+fit, 2tile'e {
+	1200px: kolumny w overlayu: 2,
+	1200px: szerokość tile’a: 600px,
+	600px: kolumny w overlayu: 2,
+	600px: szerokość tile’a: 300px
+}
 
+
+fill, 2 tile’e {
+	1200px: kolumny w overlayu: 6,
+	1200px: szerokość tile’a: 200px,
+	600px: kolumny w overlayu: 3,
+	600px: szerokość tile’a: 200px
+}
+
+fit, 10 tile’i {
+	1200px: kolumny w overlayu: 6,
+	1200px: szerokość tile’a: 200px,
+	600px: kolumny w overlayu: 3,
+	600px: szerokość tile’a: 200px
+}
+
+fill, 10 tile’i	{
+	1200px: kolumny w overlayu: 6,
+	1200px: szerokość tile’a: 200px,
+	600px: kolumny w overlayu: 3,
+	600px: szerokość tile’a: 200px
+}
+
+
+1. Przy jakiej szerokości galerie z 2 tile’ami przestają się od siebie różnić? Dlaczego właśnie wtedy?
+
+przestają się różnić przy szerokości 539px w dół
+
+a dlaczego wtedy?
+
+nie wiem
+
+fill, 2 items przy 540px ma 3 kolumny w overlayu
+tile'e zajmują 2 kolumny
+
+fill, 2 items przy 539px ma 2 kolumny w overlayu
+tile'e zajmują 2 kolumny
+
+w 540px mieści się 3 razy 180px
+
+galeria fill przy 540px ma trzy kolumny w overlayu
+a przy 539px ma dwie kolumny w overlayu
+
+Policz z tych danych puste kolumny w fill:
+
+540px: 3 kolumny, 2 tile’e, czyli ile pustych?
+1 pusta
+539px: 2 kolumny, 2 tile’e, czyli ile pustych?
+0 pustych
+
+
+
+
+
+Galeria        | 1200px kolumny | 1200px tile | 600px kolumny | 600px tile
+fit, 2 tile'e  |   2            |    600      |      2        |		300
+fill, 2 tile'e |   6            |    200      |      3        |		200
+fit, 10 tile'i |   6            |    200      |      3        |		200
+fill, 10 tile'i|   6            |    200      |      3        |		200
+
+
+1. auto-fit utworzył 6 kolumn ale z racji że są tylko dwa tile'e to te dwa tile'e zajmują całą szerokość a pozostałe 4 kolumny mają po 0px szerokosci
+
+2. puste kolumny w fit są zapadnięte na końcu a w fill puste kolumny mają taką samą szerokość co kolumny z tile'ami
+
+3. szerokość kolumny to ma być 180px albo maksymalnie 1fr a 1fr wynosi przy 1200px, 600px
+
+
+B.
+
+3. 539px 
+
+4. fill 2 tile'e przy szerokosci 540px ma 3 kolumny i jedna kolumna jest pusta
+przy 539px ma dwie kolumny i 0 pustych
+
+5. 3 * 180 = 540
+
+6. fill przy 540px ma wysatrczająco szerokosci aby pomiescic 3 kolumny o minimalnej szerokosci 180px
+
+bo wtedy oboje mają po dwie kolumny?
+
+
+auto-fit różni się od auto-fill tylko tym, co robi z pustymi kolumnami (A2: fit je zapada, fill je zostawia).
+Przy 539px fill ma 0 takich kolumn (Twoja odpowiedź B4).
+Więc fit nie ma pustych kolumn, i obie galerie wyglądają tak samo.
+
+
+fill ma zero pustych kolumn i fit nie ma czego zapadać
+
+nie ma pustych kolumn 
+
+
+11. 
+- wyglądają tak samo
+- dla auto-fit pokazuje 6 kolumn z tym że 4 są zapadnięte a dla auto-fill pokazuje też 6 kolumn tylko kolumny mają równą szerokość w overlayu
+- wcześniej maksymalna szerokość dopuszczała aby kolumny zajmowały po równo z dostępnego miejsca
+
+
+12. auto-fit zapada puste kolumny, pozwalając aby te kolumny które nie są puste zajęły ich miejsce
+auto-fit pozwala wszystkim pustym kolumnom 
 
 
 
